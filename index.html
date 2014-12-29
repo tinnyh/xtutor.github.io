@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"/>
-    <title>《Githuber》- TGIdeas </title>
-    <meta name="description" content="腾讯M学堂课程《Githuber》" />
-    <meta name="keywords" content="github,githuber,m学堂"/>
+    <title>XTUTOR</title>
+    <meta name="description" content="XTUTOR" />
+    <meta name="keywords" content="XTUTOR,X导师"/>
     <style>
         *, :after, :before {
             -webkit-box-sizing: border-box;
@@ -14,6 +14,17 @@
             padding: 0;
             margin: 0;
         }
+        .clearfix:before,
+        .clearfix:after {
+            display: block;
+            content: " ";
+        }
+        .clearfix:after {
+            clear: both;
+        }
+        .clearfix {
+            *zoom: 1;
+        }
         html,body{
             height:100%;
             display:block;
@@ -21,20 +32,56 @@
         body{
             -webkit-tap-highlight-color:rgba(0,0,0,0);
             color:#FFF;
+            font-size:16px;
             background:#23232e;
         }
+        a{color:#48b983;}
         img{
             max-width:100%;
         }
         ol{
             list-style:decimal inside;
         }
-        h1 {font-size:3.6em;}
+        h1,h2,h3,h4{font-weight:normal;text-transform:uppercase;}
+        h1 {font-size:3.2em;}
+        h2 {font-size:2.4em;margin-bottom:10px;}
+        h3{font-size:2em;margin-bottom:10px;}
+        h4{margin-bottom:10px;}
+        .pull-left{float:left;display:inline;}
+        .pull-right{float:right;display:inline;}
+        .main{max-width:750px;margin:20px auto;padding:15px;}
+        .vcard{padding:10px;border:1px solid #ddd;background:#f6f6f6;color:#333;margin-bottom:20px;}
+        .pic {width:180px;margin-right:15px;}
+        .data {max-width:500px;}
+        .pic img{width:100%;border-radius:50%;border:1px solid rgba(0,0,0,.1);}
     </style>
 </head>
 <body>
 
-    <h1>Hi, 《Githuber》!</h1>
+    <div class="main">
+        <section class="sec">
+            <div class="vcard clearfix">    
+                <div class="pull-left pic">
+                    <img src="assets/img/brainstorm.jpg" alt="brainstrom xtutor"/></a>
+                </div>
+                <div class="pull-left data">
+                    <h1>XTUTOR</h1>
+                    <h3>Shenzhen, China</h3>
+                    <h4><a href="http://xtutor.github.io/">xtutor.github.io</a></h4>
+                    <p>
+                        A series of tutorials for web front-end development, freelance and open source. 
+                    </p>
+                </div>
+            </div>
+            <div class="projects">
+                <h2>Tutorials</h2>
+                <ol>
+                    <li><a href="/githuber">《Githuber》</a>, by LV.SAMA</li>
+                    <li><a href="/vim"></a>《VIM》, to be continued.</li>
+                </ol>
+            </div>
+        </section>
+    </div>
 
 </body>
 </html>
