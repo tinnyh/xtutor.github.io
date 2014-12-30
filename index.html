@@ -6,6 +6,7 @@
     <title>XTUTOR</title>
     <meta name="description" content="XTUTOR" />
     <meta name="keywords" content="XTUTOR,X导师"/>
+    <link href="/githuber/assets/fonts/roboto/v14/stylesheet.css" rel="stylesheet"/>
     <style>
         *, :after, :before {
             -webkit-box-sizing: border-box;
@@ -42,7 +43,7 @@
         ol{
             list-style:decimal inside;
         }
-        h1,h2,h3,h4{font-weight:normal;text-transform:uppercase;}
+        h1,h2,h3,h4{font-family:robotothin;font-weight:100;text-transform:uppercase;}
         h1 {font-size:3.2em;}
         h2 {font-size:2.4em;margin-bottom:10px;}
         h3{font-size:2em;margin-bottom:10px;}
@@ -51,6 +52,7 @@
         .pull-right{float:right;display:inline;}
         .main{max-width:750px;margin:20px auto;padding:15px;}
         .vcard{padding:10px;border:1px solid #ddd;background:#f6f6f6;color:#333;margin-bottom:20px;}
+        .sec{margin-bottom:20px;}
         .pic {width:180px;margin-right:15px;}
         .data {max-width:500px;}
         .pic img{width:100%;border-radius:50%;border:1px solid rgba(0,0,0,.1);}
@@ -59,28 +61,34 @@
 <body>
 
     <div class="main">
-        <section class="sec">
-            <div class="vcard clearfix">    
-                <div class="pull-left pic">
-                    <img src="assets/img/brainstorm.jpg" alt="brainstrom xtutor"/></a>
-                </div>
-                <div class="pull-left data">
-                    <h1>XTUTOR</h1>
-                    <h3>Shenzhen, China</h3>
-                    <h4><a href="http://xtutor.github.io/">xtutor.github.io</a></h4>
-                    <p>
-                        A series of tutorials for web front-end development, freelance and open source. 
-                    </p>
-                </div>
+        <div class="sec vcard clearfix">    
+            <div class="pull-left pic">
+                <img src="assets/img/brainstorm.jpg" alt="brainstrom xtutor"/></a>
             </div>
-            <div class="projects">
-                <h2>Tutorials</h2>
-                <ol>
-                    <li><a href="/githuber">《Githuber》</a>, by LV.SAMA</li>
-                    <li><a href="/vim"></a>《VIM》, to be continued.</li>
-                </ol>
+            <div class="pull-left data">
+                <h1>XTUTOR</h1>
+                <h3>Shenzhen, China</h3>
+                <h4><a href="http://xtutor.github.io/">xtutor.github.io</a></h4>
+                <p>
+                    A series of tutorials for web front-end development, freelance and open source. 
+                </p>
             </div>
-        </section>
+        </div>
+        <div class="sec projects">
+            <h2>Tutorials</h2>
+            <ol>
+                <li>Dec. 2014, <a href="/githuber">《Githuber》</a>, by LV.SAMA</li>
+                <li>Feb. 2015, <a href="/vim">《VIM Cheat Sheet》</a>, coming soon.</li>
+            </ol>
+        </div>
+        <div class="sec joinus">
+            <h2>Join us</h2>
+            <ol>
+                <li>Fork our github project <a href="https://github.com/xtutor/xtutor.github.io.git" target="_blank">xtutor.github.io</a></li>
+                <li>Add your tutorial's link in index.html</li>
+                <li>Commit, push and make a pull request</li>
+            </ol>
+        </div>
     </div>
 
 </body>
